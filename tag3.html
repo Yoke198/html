@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<div id="form">
+    <form method="get" action="http://56shopping.top/user/login.do">
+        name:
+        <input type="text" name="name" placeholder="username"/><br/>
+        passwd:
+        <input type="password" name="password" maxlength="10"><br/>
+
+        <!--cols == width-->
+        <textarea name="textarea" cols="20" rows="4">
+
+        </textarea>
+        <br>
+
+        <!--表单输入类型 begin-->
+        <!--一组单选框应具有相同name-->
+        <p>
+            <input type="radio" name="gender" value="m" checked="checked">男
+            <input type="radio" name="gender" value="w" id="w"><label for="w">女</label>
+        </p>
+        <p>
+            <input type="checkbox" name="c1" value="c1">c1
+            <input type="checkbox" name="c2" value="c2">c2
+        </p>
+        <!--表单输入类型 end-->
+
+        <!--表单选择 begin-->
+        <p>
+            <select name="select">
+                <optgroup label="group1">
+                    <option value="o1" >o1</option>
+                    <option value="o2" selected="selected">o2</option>
+                </optgroup>
+                <optgroup label="group2">
+                    <option value="x1" >x1</option>
+                    <option value="x2" selected="selected">x2</option>
+                </optgroup>
+            </select>
+        </p>
+        <!--表单选择 end-->
+        <button type="submit">Submit</button>
+    </form>
+</div>
+</body>
+</html>
