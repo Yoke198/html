@@ -1,0 +1,70 @@
+/*标签选择器*/
+/*
+p{
+    color: #ff793d;
+}
+*/
+
+#iclazz{
+    color: #4dfff2;
+}
+
+/*子选择器 第一代子元素 a>b>c .. 常用于 ul li*/
+.first > span{
+    border:1px solid red;
+}
+
+/*包含选择器*/
+.food li{
+    border:1px solid red;
+}
+
+/*通用选择器*/
+* {
+
+}
+
+/*类选择器词列表 class="first color"*/
+.color{
+    color: #4dfff2;
+}
+
+/*分组选择符*/
+h1,h2{
+
+}
+
+/*伪类选择符*/
+#a:hover{
+    color: #000;
+}
+/*
+css某些样式具有继承性，如fon-size
+*/
+body{
+    font-family: 微软雅黑;
+}
+
+/*
+外联样式权值：标签的权值为1，类选择符的权值为10，ID选择符的权值最高为100 (只会选择属性相同并且权值最高的,属性不同的都会生效)
+*/
+p{color:red; font-size: 12px} /*权值为1*/
+p span{color:green;} /*权值为1+1=2*/
+.warning{color:white;} /*权值为10*/
+p span.warning{color:purple;} /*权值为1+1+10=12*/
+#footer .note p{color:yellow;} /*权值为100+10+1=111*/
+
+/*
+层叠：同一个元素，样式相同，权值相同，后面样式覆盖前面样式
+*/
+
+/*
+重要性
+出项层叠，强制使用前面的样式
+*/
+p{
+     color: #000 !important;
+ }
+p{
+    color: red;
+}

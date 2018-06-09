@@ -1,0 +1,36 @@
+/*
+字体 font-family:"Microsoft Yahei"
+*/
+P{
+    font-family: 宋体;
+    font-weight: bold;
+    font-style:italic;
+    /*删除线*/
+    text-decoration: line-through;
+    text-indent: 2em;
+    /*2em = 2 * px 相对字体长度*/
+    line-height: 2em;
+    letter-spacing: 10px;
+    word-spacing: 10px;
+    text-align: left;
+}
+a{
+    /*去除下划线*/
+    text-decoration: none;
+}
+
+pre{
+    font-size: 10px;
+    line-height: 2em;
+}
+
+
+#div1{
+    width:200px;
+    height:200px;
+    border:2px red solid;
+    position:relative;
+    left:100px;
+    top:50px;
+}
+

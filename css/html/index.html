@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <!--rel:被链接文档是样式表 type:加载样式表-->
+    <link rel="stylesheet" href="../mycss/mystyle.css">
+
+</head>
+<!--
+三种css样式；选择器与选择符；CSS继承，权值，层叠
+-->
+<body>
+    <div>
+        <!--内联 > 嵌入(在link后面，层叠) > 外联css样式-->
+        <p>标签选择器</p>
+
+        <p class="first color">
+            <span>
+                [
+                    <span>xxx</span>
+                ]
+            </span>
+        </p>
+
+        <ul class="food">
+            <li>水果
+                <ul>
+                    <li>香蕉</li>
+                </ul>
+            </li>
+            <li>蔬菜
+                <ul>
+                    <li>白菜</li>
+                </ul>
+            </li>
+        </ul>
+
+    <a href="#" id="a">链接</a>
+    </div>
+</body>
+</html>
